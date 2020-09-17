@@ -17,5 +17,5 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'C:\IBOPE\envAutomation\AutomacaoQA'
-    workingDirectory: 'python generateManualEvidence.py'
+    script: 'python generateManualEvidence.py'
+    workingDirectory: 'C:\IBOPE\envAutomation\AutomacaoQA'
