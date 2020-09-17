@@ -1,4 +1,8 @@
 steps:
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'inline'
+    script: 'C:\IBOPE\envAutomation\AutomacaoQA\python generateManualEvidence.py'
 - task: NodeTool@0
   inputs:
     versionSpec: "8.x"
