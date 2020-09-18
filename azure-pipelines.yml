@@ -1,5 +1,6 @@
-steps:
-
-- task: CmdLine@2
+- task: DownloadGitHubRelease@0
   inputs:
-    script: 'echo "TESTE"'
+    connection: 'RicardoMelloKIM'
+    userRepository: 'AutomacaoITQC/AutomacaoQA'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
