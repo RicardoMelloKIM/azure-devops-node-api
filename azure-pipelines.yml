@@ -1,16 +1,5 @@
 steps:
 
-#  Create the commit in GitHub
-- task: GitHubRelease@1
-  inputs:
-    gitHubConnection: 'RicardoMelloKIM'
-    repositoryName: '$(Build.Repository.Name)'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'gitTag'
-    changeLogCompareToRelease: 'lastFullRelease'
-    changeLogType: 'commitBased'
-
 # Execute the download to the Azure Repos
 - task: DownloadGitHubRelease@0
   inputs:
