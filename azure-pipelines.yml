@@ -5,4 +5,4 @@ steps:
     userRepository: 'AutomacaoITQC/AutomacaoQA'
     defaultVersionType: 'latest'
     downloadPath: '$(System.ArtifactsDirectory)'
-    version: '2.8.7'
+    version: 2.8.7
