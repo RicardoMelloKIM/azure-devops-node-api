@@ -17,4 +17,5 @@ steps:
     connection: 'RicardoMelloKIM'
     userRepository: 'AutomacaoITQC/AutomacaoQA'
     defaultVersionType: 'latest'
+    version: '2.8.7'
     downloadPath: '$(System.ArtifactsDirectory)'
