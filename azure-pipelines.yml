@@ -1,3 +1,4 @@
+steps:
 - task: DownloadGitHubRelease@0
   inputs:
     connection: 'RicardoMelloKIM'
