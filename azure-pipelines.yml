@@ -17,5 +17,5 @@ steps:
     connection: 'RicardoMelloKIM'
     userRepository: 'AutomacaoITQC/AutomacaoQA'
     defaultVersionType: 'latest'
-    tagSource: 'gitTag'
+    version: '1'
     downloadPath: '$(System.ArtifactsDirectory)'
