@@ -1,8 +1,11 @@
 steps:
-- task: DownloadGitHubRelease@0
+
+- task: GitHubRelease@1
   inputs:
-    connection: 'RicardoMelloKIM'
-    userRepository: 'AutomacaoITQC/AutomacaoQA'
-    defaultVersionType: 'latest'
-    downloadPath: '$(System.ArtifactsDirectory)'
-    tag: '2.8.7'
+    gitHubConnection: 'RicardoMelloKIM'
+    repositoryName: '$(Build.Repository.Name)'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
