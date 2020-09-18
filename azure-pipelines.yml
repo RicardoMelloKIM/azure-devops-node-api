@@ -1,5 +1,6 @@
 steps:
 
+#  Create the commit in GitHub
 - task: GitHubRelease@1
   inputs:
     gitHubConnection: 'RicardoMelloKIM'
@@ -10,6 +11,7 @@ steps:
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
 
+# Execute the download to the Azure Repos
 - task: DownloadGitHubRelease@0
   inputs:
     connection: 'RicardoMelloKIM'
