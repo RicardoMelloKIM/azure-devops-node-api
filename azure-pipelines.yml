@@ -9,3 +9,10 @@ steps:
     tagSource: 'gitTag'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
+
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'RicardoMelloKIM'
+    userRepository: 'AutomacaoITQC/AutomacaoQA'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
